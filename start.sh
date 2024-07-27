@@ -1,10 +1,9 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/VJBots/AutoFilterAdvance /AutoFilterAdvance
-else
+  git clone https://github.com/xaikole/ForceBot.git
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /AutoFilterAdvance
+  git clone $UPSTREAM_REPO /ForceBot
 fi
 cd /AutoFilterAdvance
 pip3 install -U -r requirements.txt
